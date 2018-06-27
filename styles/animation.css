@@ -1,0 +1,143 @@
+.logo{
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+}
+.any_logo:hover{
+	opacity: 1;
+}
+.football_button:hover .BPL{
+transform: scale(1.2);
+bottom: 200px;
+}
+.football_button:hover .BBVA{
+	transform: scale(1.4) rotateZ(33deg);
+	bottom: 178px;
+	left: -52px;
+}
+.football_button:hover .ChL{
+transform: scale(1.5) rotateZ(-30deg);
+bottom: 157px;
+left: 60px;
+}
+.football_button:hover .football_ball{
+	transform: rotateZ(360deg);
+}
+.basketball_button:hover .NBA{
+	transform:rotateZ(15deg);
+
+	-webkit-animation: swingNBA 1s ease;
+	-moz-animation: swingNBA 1s ease;
+	-o-animation: swingNBA 1s ease;
+  animation: swingNBA 1s ease;
+	animation-fill-mode: forwards;
+}
+/*описание пошаговой анимации логотипа NBA*/
+@keyframes swingNBA {
+	0%{
+		bottom:275px;
+		left: 78px;
+	}
+	6%{
+		bottom:290px;
+		left: 90px;
+	}
+	12%{
+		bottom:305px;
+		left: 105px;
+	}
+	25%{
+		bottom:310px;
+		left: 115px;
+	}
+	31%{
+		bottom:317px;
+		left: 125px;
+	}
+	37%{
+		bottom:310px;
+		left: 127px;
+	}
+	43%{
+		bottom:300px;
+		left: 130px;
+	}
+	50%{
+		bottom:285px;
+		left: 132px;
+	}
+	56%{
+		bottom:260px;
+		left: 135px;
+	}
+	62%{
+		bottom:240px;
+		left: 136px;
+	}
+	68%{
+		bottom:210px;
+		left: 136px;
+	}
+	75%{
+		bottom:230px;
+		left: 140px;
+	}
+	81%{
+		bottom:210px;
+		left: 143px;
+	}
+	87%{
+		bottom:220px;
+		left: 143px;
+	}
+	93%{
+		bottom:214px;
+		left: 143px;
+	}
+  100% {
+		bottom:212px;
+		left: 143px;
+  }
+
+}
+.hockey_button:hover .hockey_stick{
+	-webkit-animation: swingStick 1s ease;
+	-moz-animation: swingStick 1s ease;
+	-o-animation: swingStick 1s ease;
+  animation: swingStick 1s ease;
+	animation-fill-mode: forwards;
+}
+.hockey_button:hover .KHL{
+	bottom: 185px;
+	left: 75px;
+	transform: scale(1.5);
+	transition-delay: 0.1s;
+}
+.hockey_button:hover .NHL{
+	bottom: 300px;
+	left: 167px;
+	transform: scale(1.5);
+	transition-delay: 1s;
+}
+/*описание пошаговой анимации хоккейной клюшки*/
+@keyframes swingStick {
+	0%{
+		transform:rotateZ(0deg);
+	}
+	15%{
+		transform:rotateZ(45deg);
+	}
+	47%{
+		transform:rotateZ(0deg);
+	}
+	50%{
+		transform: scale(-1,1) rotateZ(-30deg);
+	}
+	85%
+	{
+		transform:scale(-1,1) rotateZ(-50deg);
+	}
+	100%{
+		transform:scale(-1,1) rotateZ(0deg);
+	}
+}

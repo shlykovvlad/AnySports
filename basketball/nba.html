@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>AnySports|NBA</title>
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../styles/animation.css">
+	<link rel="stylesheet" href="../styles/image.css">
+	<link rel="stylesheet" href="../styles/text.css">
+	<link rel="icon" href="../images/logos/logob.ico" type="image/x-icon">
+	<script src="../scripts/change_color_league.js"></script>
+	<script src="../scripts/nba.js"></script>
+	<script src="../scripts/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../scripts/scroll.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="container_i">
+			<a href="../index.html" class="a_logo">
+				<img src="../images/logos/logo_y.png" alt="AnySports" width="180" height="180" border="0" id="any_logo" class="any_logo">
+			</a>
+			<h1 class="slogan"> Спорт на любой вкус!</h1>
+			<a href="../log_in.html" class="log_in">Авторизация</a>
+		</div>
+	</header>
+	<div class="main">
+		<div class="container">
+			<table class="key_info_area color_table" cellspacing="5" width=200px id="fixed">
+				<thead>
+					<tr>
+						<td colspan="2" class="center_td">
+							<h4 class="name">Национальная баскетбольная ассоциация</h4>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2" class="center_td">
+							<figure>
+								<img src="../images/basketball/NBA_logo(1).png" alt="Логотип НБА" width="250" height="170" border="0" class="table_img">
+								<figcaption>Логотип</figcaption>
+							</figure>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="center_td">
+							<figure>
+								<img src="../images/basketball/nba_cup.png" alt="Кубок АПЛ" width="250" height="272" border="0" class="table_img">
+								<figcaption>Кубок</figcaption>
+							</figure>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Страна</b>
+						</td>
+						<td>США <b>(29)</b> <br>Канада <b>(1)</b>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Дата основания</b>
+						</td>
+						<td>6 июня 1946</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Количество команд</b>
+						</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Действующий чемпион</b>
+						</td>
+						<td><a href="../develop.html">Голден Стэйт Уорриорз</a></td>
+					</tr>
+					<tr>
+						<td>
+							<b>Наиболеетитулованный клуб</b>
+						</td>
+						<td><a href="../develop.html">Бостон Селтикс <b>(17)</b></a></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>
+							<b>Сайт</b>
+						</td>
+						<td>
+							<a href="https://www.nba.com/">www.nba.com</a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="content_area">
+				<h2 class="topic" style="width: 12%;">Справка</h2>
+				<p>
+					Национальная баскетбольная ассоциация - мужская профессиональная баскетбольная лига Северной Америки, в частности, США и Канады. Входит в четвёрку главных профессиональных спортивных лиг Северной Америки. Была основана в 1946 году как Баскетбольная ассоциация
+					Америки и, соединившись с Национальной баскетбольной лигой, была переименована в Национальную баскетбольную ассоциацию.
+				</p>
+				<p>
+					К 2011 году в состав Ассоциации входят 30 команд, которые по географическому признаку разделены на Восточную и Западную конференции, а каждая из конференций, в свою очередь, разделена на три дивизиона по пять команд. В течение регулярного сезона каждая
+					из команд проводит 82 матча, по результатам которых отбираются участники плей-офф. В плей-офф команды играют по олимпийской системе, до 4 побед в своей конференции. Два чемпиона конференций встречаются между собой в главном финале, где и определяется
+					обладатель звания чемпиона НБА.
+				</p>
+				<table class="uncolor_table">
+					<tr>
+						<td style="padding-right: 60px;">
+							<h2 class="topic">Турнирная таблица</h2>
+						</td>
+						<td id="button_conf" style="padding-right: 10px; visibility: collapse;">
+							<button onclick="showConf()" class="buttons">Конференции</button>
+						</td>
+						<td id="button_div">
+							<button onclick="showDiv()" class="buttons">Дивизионы</button>
+						</td>
+					</tr>
+				</table>
+
+				<table class="uncolor_table" cellspacing="15">
+					<tr id="east">
+						<td>
+							<table class="nba_cmd_table color_table" cellspacing="3">
+								<thead>
+									<tr>
+										<td colspan="8" class="td_test_left">
+											<b>Восточная конференция</b>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>#</b>
+										</td>
+										<td class="td_test_left">
+											<b>Название команды</b>
+										</td>
+										<td>
+											<b>И</b>
+										</td>
+
+										<td>
+											<b>В</b>
+										</td>
+										<td>
+											<b>П</b>
+										</td>
+										<td>
+											<b>МЗ</b>
+										</td>
+										<td>
+											<b>МП</b>
+										</td>
+										<td>
+											<b>О</b>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="td_test_left"><a href="../develop.html">Бостон Селтикс</a></td>
+										<td>17</td>
+										<td>15</td>
+										<td>2</td>
+										<td>1742</td>
+										<td>1605</td>
+										<td>32</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="td_test_left"><a href="../develop.html">Детройт Пистонс</a></td>
+										<td>15</td>
+										<td>10</td>
+										<td>5</td>
+										<td>1580</td>
+										<td>1522</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="td_test_left"><a href="../develop.html">Торонто Рэпторс</a></td>
+										<td>15</td>
+										<td>10</td>
+										<td>5</td>
+										<td>1666</td>
+										<td>1566</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="td_test_left"><a href="../develop.html">Вашингтон Уизардс</a></td>
+										<td>15</td>
+										<td>9</td>
+										<td>6</td>
+										<td>1638</td>
+										<td>1561</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="td_test_left"><a href="../develop.html">Кливленд Кавальерс</a></td>
+										<td>16</td>
+										<td>9</td>
+										<td>7</td>
+										<td>1770</td>
+										<td>1795</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td class="td_test_left"><a href="../develop.html">Милуоки Бакс</a></td>
+										<td>15</td>
+										<td>8</td>
+										<td>7</td>
+										<td>1534</td>
+										<td>1573</td>
+										<td>23</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td class="td_test_left"><a href="../develop.html">Нью-Йорк Никс</a></td>
+										<td>15</td>
+										<td>8</td>
+										<td>7</td>
+										<td>1568</td>
+										<td>1572</td>
+										<td>23</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td class="td_test_left"><a href="../develop.html">Филадельфия Сиксерс</a></td>
+										<td>15</td>
+										<td>8</td>
+										<td>7</td>
+										<td>1635</td>
+										<td>1656</td>
+										<td>23</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td class="td_test_left"><a href="../develop.html">Индиана Пэйсерс</a></td>
+										<td>16</td>
+										<td>8</td>
+										<td>8</td>
+										<td>1735</td>
+										<td>1740</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td class="td_test_left"><a href="../develop.html">Орландо Мэджик</a></td>
+										<td>16</td>
+										<td>8</td>
+										<td>8</td>
+										<td>1716</td>
+										<td>1733</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td class="td_test_left"><a href="../develop.html">Майами Хит</a></td>
+										<td>15</td>
+										<td>7</td>
+										<td>8</td>
+										<td>1509</td>
+										<td>1530</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td class="td_test_left"><a href="../develop.html">Бруклин Нетс</a></td>
+										<td>15</td>
+										<td>6</td>
+										<td>9</td>
+										<td>1658</td>
+										<td>1705</td>
+										<td>21</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td class="td_test_left"><a href="../develop.html">Шарлотт Хорнетс</a></td>
+										<td>15</td>
+										<td>6</td>
+										<td>9</td>
+										<td>1570</td>
+										<td>1584</td>
+										<td>21</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td class="td_test_left"><a href="../develop.html">Чикаго Буллз</a></td>
+										<td>13</td>
+										<td>3</td>
+										<td>10</td>
+										<td>1233</td>
+										<td>1355</td>
+										<td>16</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td class="td_test_left"><a href="../develop.html">Атланта Хоукс</a></td>
+										<td>16</td>
+										<td>3</td>
+										<td>13</td>
+										<td>1662</td>
+										<td>1736</td>
+										<td>19</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr id="west">
+						<td>
+							<table class="nba_cmd_table color_table" cellspacing="3">
+								<thead>
+									<tr>
+										<td colspan="8" class="td_test_left">
+											<b>Западная конференция</b>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>#</b>
+										</td>
+										<td class="td_test_left">
+											<b>Название команды</b>
+										</td>
+										<td>
+											<b>И</b>
+										</td>
+
+										<td>
+											<b>В</b>
+										</td>
+										<td>
+											<b>П</b>
+										</td>
+										<td>
+											<b>МЗ</b>
+										</td>
+										<td>
+											<b>МП</b>
+										</td>
+										<td>
+											<b>О</b>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="td_test_left"><a href="../develop.html">Хьюстон Рокетс</a></td>
+										<td>17</td>
+										<td>13</td>
+										<td>4</td>
+										<td>1915</td>
+										<td>1768</td>
+										<td>30</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="td_test_left"><a href="../develop.html">Голден Стэйт Уорриорз</a></td>
+										<td>16</td>
+										<td>12</td>
+										<td>4</td>
+										<td>1886</td>
+										<td>1716</td>
+										<td>28</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="td_test_left"><a href="../develop.html">Миннесота Тимбервулвз</a></td>
+										<td>15</td>
+										<td>10</td>
+										<td>5</td>
+										<td>1623</td>
+										<td>1612</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="td_test_left"><a href="../develop.html">Сан-Антонио Спёрс</a></td>
+										<td>16</td>
+										<td>10</td>
+										<td>6</td>
+										<td>1626</td>
+										<td>1585</td>
+										<td>26</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="td_test_left"><a href="../develop.html">Денвер Наггетс</a></td>
+										<td>15</td>
+										<td>9</td>
+										<td>6</td>
+										<td>1627</td>
+										<td>1581</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td class="td_test_left"><a href="../develop.html">Портленд Трэйл Блэйзерс</a></td>
+										<td>16</td>
+										<td>9</td>
+										<td>7</td>
+										<td>1648</td>
+										<td>1560</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td class="td_test_left"><a href="../develop.html">Нью-Орлеан Пеликанс</a></td>
+										<td>16</td>
+										<td>8</td>
+										<td>8</td>
+										<td>1734</td>
+										<td>1769</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td class="td_test_left"><a href="../develop.html">Мемфис Гриззлиз</a></td>
+										<td>15</td>
+										<td>7</td>
+										<td>8</td>
+										<td>1511</td>
+										<td>1520</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td class="td_test_left"><a href="../develop.html">Оклахома-Сити Тандер</a></td>
+										<td>15</td>
+										<td>7</td>
+										<td>8</td>
+										<td>1544</td>
+										<td>1463</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td class="td_test_left"><a href="../develop.html">Юта Джаз</a></td>
+										<td>17</td>
+										<td>7</td>
+										<td>10</td>
+										<td>1709</td>
+										<td>1713</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td class="td_test_left"><a href="../develop.html">Лос-Анджелес Лейкерс</a></td>
+										<td>16</td>
+										<td>6</td>
+										<td>10</td>
+										<td>1668</td>
+										<td>1719</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td class="td_test_left"><a href="../develop.html">Финикс Санз</a></td>
+										<td>17</td>
+										<td>6</td>
+										<td>11</td>
+										<td>1829</td>
+										<td>1982</td>
+										<td>23</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td class="td_test_left"><a href="../develop.html">Лос-Анджелес Клипперс</a></td>
+										<td>15</td>
+										<td>5</td>
+										<td>10</td>
+										<td>1594</td>
+										<td>1598</td>
+										<td>20</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td class="td_test_left"><a href="../develop.html">Сакраменто Кингз</a></td>
+										<td>16</td>
+										<td>4</td>
+										<td>12</td>
+										<td>1486</td>
+										<td>1684</td>
+										<td>20</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td class="td_test_left"><a href="../develop.html">Даллас Маверикс</a></td>
+										<td>17</td>
+										<td>3</td>
+										<td>14</td>
+										<td>1682</td>
+										<td>1795</td>
+										<td>20</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr id="atl" style="visibility: collapse">
+						<td>
+							<table class="nba_cmd_table color_table" cellspacing="3">
+								<thead>
+									<tr>
+										<td colspan="8" class="td_test_left">
+											<b>Атлантический дивизион</b>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>#</b>
+										</td>
+										<td class="td_test_left">
+											<b>Название команды</b>
+										</td>
+										<td>
+											<b>И</b>
+										</td>
+
+										<td>
+											<b>В</b>
+										</td>
+										<td>
+											<b>П</b>
+										</td>
+										<td>
+											<b>МЗ</b>
+										</td>
+										<td>
+											<b>МП</b>
+										</td>
+										<td>
+											<b>О</b>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="td_test_left"><a href="../develop.html">Бостон Селтикс</a></td>
+										<td>17</td>
+										<td>15</td>
+										<td>2</td>
+										<td>1742</td>
+										<td>1605</td>
+										<td>32</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="td_test_left"><a href="../develop.html">Торонто Рэпторс</a></td>
+										<td>15</td>
+										<td>10</td>
+										<td>5</td>
+										<td>1666</td>
+										<td>1566</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="td_test_left"><a href="../develop.html">Нью-Йорк Никс</a></td>
+										<td>15</td>
+										<td>8</td>
+										<td>7</td>
+										<td>1568</td>
+										<td>1572</td>
+										<td>23</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="td_test_left"><a href="../develop.html">Филадельфия Сиксерс</a></td>
+										<td>15</td>
+										<td>8</td>
+										<td>7</td>
+										<td>1635</td>
+										<td>1656</td>
+										<td>23</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="td_test_left"><a href="../develop.html">Бруклин Нетс</a></td>
+										<td>15</td>
+										<td>6</td>
+										<td>9</td>
+										<td>1658</td>
+										<td>1705</td>
+										<td>21</td>
+									</tr>
+							</table>
+						</td>
+					</tr>
+					<tr id="ctr" style="visibility: collapse">
+						<td>
+							<table class="nba_cmd_table color_table" cellspacing="3">
+								<thead>
+									<tr>
+										<td colspan="8" class="td_test_left">
+											<b>Центральный дивизион</b>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>#</b>
+										</td>
+										<td class="td_test_left">
+											<b>Название команды</b>
+										</td>
+										<td>
+											<b>И</b>
+										</td>
+
+										<td>
+											<b>В</b>
+										</td>
+										<td>
+											<b>П</b>
+										</td>
+										<td>
+											<b>МЗ</b>
+										</td>
+										<td>
+											<b>МП</b>
+										</td>
+										<td>
+											<b>О</b>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="td_test_left"><a href="../develop.html">Детройт Пистонс</a></td>
+										<td>15</td>
+										<td>10</td>
+										<td>5</td>
+										<td>1580</td>
+										<td>1522</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="td_test_left"><a href="../develop.html">Кливленд Кавальерс</a></td>
+										<td>16</td>
+										<td>9</td>
+										<td>7</td>
+										<td>1770</td>
+										<td>1795</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="td_test_left"><a href="../develop.html">Милуоки Бакс</a></td>
+										<td>15</td>
+										<td>8</td>
+										<td>7</td>
+										<td>1534</td>
+										<td>1573</td>
+										<td>23</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="td_test_left"><a href="../develop.html">Индиана Пэйсерс</a></td>
+										<td>16</td>
+										<td>8</td>
+										<td>8</td>
+										<td>1735</td>
+										<td>1740</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="td_test_left"><a href="../develop.html">Чикаго Буллз</a></td>
+										<td>13</td>
+										<td>3</td>
+										<td>10</td>
+										<td>1233</td>
+										<td>1355</td>
+										<td>16</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr id="south-east" style="visibility: collapse">
+						<td>
+							<table class="nba_cmd_table color_table" cellspacing="3">
+								<thead>
+									<tr>
+										<td colspan="8" class="td_test_left">
+											<b>Юго-Восточный дивизион</b>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>#</b>
+										</td>
+										<td class="td_test_left">
+											<b>Название команды</b>
+										</td>
+										<td>
+											<b>И</b>
+										</td>
+
+										<td>
+											<b>В</b>
+										</td>
+										<td>
+											<b>П</b>
+										</td>
+										<td>
+											<b>МЗ</b>
+										</td>
+										<td>
+											<b>МП</b>
+										</td>
+										<td>
+											<b>О</b>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="td_test_left"><a href="../develop.html">Вашингтон Уизардс</a></td>
+										<td>15</td>
+										<td>9</td>
+										<td>6</td>
+										<td>1638</td>
+										<td>1561</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="td_test_left"><a href="../develop.html">Орландо Мэджик</a></td>
+										<td>16</td>
+										<td>8</td>
+										<td>8</td>
+										<td>1716</td>
+										<td>1733</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="td_test_left"><a href="../develop.html">Майами Хит</a></td>
+										<td>15</td>
+										<td>7</td>
+										<td>8</td>
+										<td>1509</td>
+										<td>1530</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="td_test_left"><a href="../develop.html">Шарлотт Хорнетс</a></td>
+										<td>15</td>
+										<td>6</td>
+										<td>9</td>
+										<td>1570</td>
+										<td>1584</td>
+										<td>21</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="td_test_left"><a href="../develop.html">Атланта Хоукс</a></td>
+										<td>16</td>
+										<td>3</td>
+										<td>13</td>
+										<td>1662</td>
+										<td>1736</td>
+										<td>19</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr id="north-west" style="visibility: collapse">
+						<td>
+							<table class="nba_cmd_table color_table" cellspacing="3">
+								<thead>
+									<tr>
+										<td colspan="8" class="td_test_left">
+											<b>Северо-Западный дивизион</b>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>#</b>
+										</td>
+										<td class="td_test_left">
+											<b>Название команды</b>
+										</td>
+										<td>
+											<b>И</b>
+										</td>
+
+										<td>
+											<b>В</b>
+										</td>
+										<td>
+											<b>П</b>
+										</td>
+										<td>
+											<b>МЗ</b>
+										</td>
+										<td>
+											<b>МП</b>
+										</td>
+										<td>
+											<b>О</b>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="td_test_left"><a href="../develop.html">Миннесота Тимбервулвз</a></td>
+										<td>15</td>
+										<td>10</td>
+										<td>5</td>
+										<td>1623</td>
+										<td>1612</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="td_test_left"><a href="../develop.html">Денвер Наггетс</a></td>
+										<td>15</td>
+										<td>9</td>
+										<td>6</td>
+										<td>1627</td>
+										<td>1581</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="td_test_left"><a href="../develop.html">Портленд Трэйл Блэйзерс</a></td>
+										<td>16</td>
+										<td>9</td>
+										<td>7</td>
+										<td>1648</td>
+										<td>1560</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="td_test_left"><a href="../develop.html">Оклахома-Сити Тандер</a></td>
+										<td>15</td>
+										<td>7</td>
+										<td>8</td>
+										<td>1544</td>
+										<td>1463</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="td_test_left"><a href="../develop.html">Юта Джаз</a></td>
+										<td>17</td>
+										<td>7</td>
+										<td>10</td>
+										<td>1709</td>
+										<td>1713</td>
+										<td>24</td>
+									</tr>
+							</table>
+						</td>
+					</tr>
+					<tr id="pac" style="visibility: collapse">
+						<td>
+							<table class="nba_cmd_table color_table" cellspacing="3">
+								<thead>
+									<tr>
+										<td colspan="8" class="td_test_left">
+											<b>Тихоокеанский дивизион</b>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>#</b>
+										</td>
+										<td class="td_test_left">
+											<b>Название команды</b>
+										</td>
+										<td>
+											<b>И</b>
+										</td>
+
+										<td>
+											<b>В</b>
+										</td>
+										<td>
+											<b>П</b>
+										</td>
+										<td>
+											<b>МЗ</b>
+										</td>
+										<td>
+											<b>МП</b>
+										</td>
+										<td>
+											<b>О</b>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="td_test_left"><a href="../develop.html">Голден Стэйт Уорриорз</a></td>
+										<td>16</td>
+										<td>12</td>
+										<td>4</td>
+										<td>1886</td>
+										<td>1716</td>
+										<td>28</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="td_test_left"><a href="../develop.html">Лос-Анджелес Лейкерс</a></td>
+										<td>16</td>
+										<td>6</td>
+										<td>10</td>
+										<td>1668</td>
+										<td>1719</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="td_test_left"><a href="../develop.html">Финикс Санз</a></td>
+										<td>17</td>
+										<td>6</td>
+										<td>11</td>
+										<td>1829</td>
+										<td>1982</td>
+										<td>23</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="td_test_left"><a href="../develop.html">Лос-Анджелес Клипперс</a></td>
+										<td>15</td>
+										<td>5</td>
+										<td>10</td>
+										<td>1594</td>
+										<td>1598</td>
+										<td>20</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="td_test_left"><a href="../develop.html">Сакраменто Кингз</a></td>
+										<td>16</td>
+										<td>4</td>
+										<td>12</td>
+										<td>1486</td>
+										<td>1684</td>
+										<td>20</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr id="south-west" style="visibility: collapse">
+						<td>
+							<table class="nba_cmd_table color_table" cellspacing="3">
+								<thead>
+									<tr>
+										<td colspan="8" class="td_test_left">
+											<b>Юго-Западный дивизион</b>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<b>#</b>
+										</td>
+										<td class="td_test_left">
+											<b>Название команды</b>
+										</td>
+										<td>
+											<b>И</b>
+										</td>
+
+										<td>
+											<b>В</b>
+										</td>
+										<td>
+											<b>П</b>
+										</td>
+										<td>
+											<b>МЗ</b>
+										</td>
+										<td>
+											<b>МП</b>
+										</td>
+										<td>
+											<b>О</b>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="td_test_left"><a href="../develop.html">Хьюстон Рокетс</a></td>
+										<td>17</td>
+										<td>13</td>
+										<td>4</td>
+										<td>1915</td>
+										<td>1768</td>
+										<td>30</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="td_test_left"><a href="../develop.html">Сан-Антонио Спёрс</a></td>
+										<td>16</td>
+										<td>10</td>
+										<td>6</td>
+										<td>1626</td>
+										<td>1585</td>
+										<td>26</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="td_test_left"><a href="../develop.html">Нью-Орлеан Пеликанс</a></td>
+										<td>16</td>
+										<td>8</td>
+										<td>8</td>
+										<td>1734</td>
+										<td>1769</td>
+										<td>24</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="td_test_left"><a href="../develop.html">Мемфис Гриззлиз</a></td>
+										<td>15</td>
+										<td>7</td>
+										<td>8</td>
+										<td>1511</td>
+										<td>1520</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="td_test_left"><a href="../develop.html">Даллас Маверикс</a></td>
+										<td>17</td>
+										<td>3</td>
+										<td>14</td>
+										<td>1682</td>
+										<td>1795</td>
+										<td>20</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<h2 class="topic tour" style="width:30%;">Последние 10 матчей</h2>
+				<table class="res_tour1 color_table" cellspacing="3">
+					<tbody>
+						<tr>
+							<td class="left_team"><b>Лос-Анджелес Лейкерс</b> </td>
+							<td><a href="../develop.html">103 : 94</a></td>
+							<td class="right_team"> Чикаго Буллз</td>
+						</tr>
+						<tr>
+							<td class="left_team">Сакраменто Кингз </td>
+							<td><a href="../develop.html">98 : 114</a></td>
+							<td class="right_team"> <b>Денвер Наггетс</b></td>
+						</tr>
+						<tr>
+							<td class="left_team">Даллас Маверикс </td>
+							<td><a href="../develop.html">102 : 110</a></td>
+							<td class="right_team"> <b>Бостон Селтик</b></td>
+						</tr>
+						<tr>
+							<td class="left_team"><b>Сан-Антонио Спёрс</b> </td>
+							<td><a href="../develop.html">96 : 85</a></td>
+							<td class="right_team"> Атланта Хокс</td>
+						</tr>
+						<tr>
+							<td class="left_team">Мемфис Гриззлис </td>
+							<td><a href="../develop.html">92 : 100</a></td>
+							<td class="right_team"> <b> Портленд Трэйл Блэйзерс</b></td>
+						</tr>
+						<tr>
+							<td class="left_team">Милуоки Бакс </td>
+							<td><a href="../develop.html">88 : 99</a></td>
+							<td class="right_team"> <b>Вашингтон Уизардс</b></td>
+						</tr>
+						<tr>
+							<td class="left_team"><b>Нью-Орлеан Пеликанс</b> </td>
+							<td><a href="../develop.html">114 : 107</a></td>
+							<td class="right_team"> Оклахома-Сити Тандер</td>
+						</tr>
+						<tr>
+							<td class="left_team"><b>Нью-Йорк Никс</b> </td>
+							<td><a href="../develop.html">107 : 85</a></td>
+							<td class="right_team"> Лос-Анджелес Клипперс</td>
+						</tr>
+						<tr>
+							<td class="left_team">Детройт Пистонс </td>
+							<td><a href="" ../develop.html>88 : 116</a></td>
+							<td class="right_team"> <b>Кливленд Кавальерс</b></td>
+						</tr>
+						<tr>
+							<td class="left_team">Орландо Мэджик </td>
+							<td><a href="../develop.html">97 : 105</a></td>
+							<td class="right_team"> <b>Индиана Пэйсерс</b></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container_i foot">
+			<img src="../images/logos/logo_f_y.png" alt="Copiright" width="80" height="78" border="0" class="logo_f" id="logo_f">
+			<div class="footer_slogan">
+				<b>AnySports for any people</b>
+			</div>
+			<div class="creator">
+				<a href="../about.html">О сайте</a>
+			</div>
+			<img src="../images/logos/logo_palette_y.png" alt="Палитра" width="80" height="78" border="0" id="logo_palette" onclick="changeColor()">
+		</div>
+	</footer>
+</body>
+
+</html>

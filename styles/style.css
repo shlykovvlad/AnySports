@@ -1,0 +1,171 @@
+body {
+	background : #FFCC66; /*#CC9933;*/
+	cursor: context-menu;
+}
+header {
+	display: inline-block;
+}
+footer{
+	display: inline-block;
+	width: 100%
+}
+.container_i {/*контейнер страницы index*/
+  width: 100%;
+  max-width: 1024px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container {/*контейнер типовых страниц*/
+	width: 100%;
+  max-width: 2048px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.foot{ /*костыль для расположения футера*/
+	margin-left: 0;
+}
+.a_logo {
+	float: left;
+}
+.log_in{
+	float: right;
+}
+.footer_slogan{
+	float: left;
+}
+.creator{
+	float: right;
+	margin-top: 20px;
+}
+/*ul{
+	list-style: none; /*убираем маркеры списка
+	margin: 0; /*убираем верхнее и нижнее поле, равное 1em
+	padding-left: 0; /*убираем левый отступ, равный 40px
+}*/
+a{
+	color : #000000;
+}
+a:hover{
+	cursor: -webkit-grab;
+  cursor: grab;
+	text-decoration: none;
+	/*color : #FFFF33;*/
+}
+a:active{
+	cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+/*table a:hover{
+	text-decoration: none;
+	color : #CC9933;
+}*/
+.football_button {
+	width: 42%;
+	float: left;
+	margin-top: 25px;
+}
+.basketball_button {
+	width: 25%;
+	float: left;
+}
+.hockey_button {
+	width: 28%;
+	float: left;
+	margin-top: 20px;
+}
+.football_button a{/*костыль от черточек на ссылке*/
+	text-decoration: none;
+}
+
+table{
+	background: #FFFF99;
+}
+.uncolor_table{
+	background: inherit;
+}
+.content_area{
+	width: 58%;
+	float: left;
+	margin-left: 35px;
+}
+.key_info_area{
+	/*position: fixed;*/
+	width: 35%;
+	float: left;
+	border: 3px solid black;
+}
+.center_td{
+	align:center;
+}
+.leag_table{
+	border: 3px solid black;
+}
+.leag_table td{
+	padding-right: 15px;
+}
+.td_w_pad{
+	padding-right: 130px;
+}
+.td_w_pad_1{
+	padding-right: 50px;
+}
+.res_tour{
+	margin-bottom: 20px;
+	border: 3px solid black;
+}
+.res_tour1{
+	margin-left: 2.5%;
+	margin-bottom: 20px;
+	border: 3px solid black;
+}
+.tour{
+	padding-left: 2%;
+}
+.chl_group_table{
+	width: 330px;
+	border: 3px solid black;
+}
+.nba_cmd_table{
+	width: 500px;
+	border: 3px solid black
+}
+.khl_cmd_table{
+	width: 600px;
+	border: 3px solid black
+}
+.about{
+	float:right;
+	width: 45%;
+}
+form{
+	width: 20%;
+	position: relative;
+	top: 40px;
+	left: 40%;
+	background: #FFFF99;
+	padding: 10px;
+	padding-right: 5%;
+	padding-left: 0px;
+	margin-bottom: 16%;
+}
+input,.form-control{
+	border: 1px solid #111111;
+	width: 85%;
+}
+.submit{
+	width: 45%;
+	background: #FFFFCC;
+	border: 3px ridge #FFFF33;
+}
+button{
+	background: #FFFFCC;
+	padding: 1px;
+	border: 3px ridge #FFFF33;
+}
+.topic{
+	border: 5px ridge #FFFF33;
+}
+.sorry{
+	width: 100%;
+	padding: 20px;
+}

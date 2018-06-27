@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Alice|Chewy|Gabriela|Concert+One&subset=cyrillic');
+body{
+	font-family :Gabriela, cursive;
+}
+.slogan {
+	margin:65px 90px;
+	float:left;
+	font-family :Alice, cursive;
+	font-weight: 600;
+	text-shadow: 3px 3px 5px #222222;
+}
+.log_in{
+	margin-top:75px;
+	margin-left: 170px;
+}
+.choice{
+	font-size: 16pt;
+}
+.topic{
+	margin-left: 1.5em;
+	padding: 1px;
+
+	font-size: 16pt;
+}
+.name,figcaption{
+	text-align:center;
+}
+p{
+		text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+.khl_cmd_table,.nba_cmd_table{
+	text-align: center;
+}
+table, .td_test_left{
+	text-align: left;
+}
+.left_team{
+	text-align: right;
+	padding-right: 10px;
+}
+.right_team{
+	padding-left: 10px;
+}
+.footer_slogan {
+	text-align: center;
+	font-family: Chewy, cursive;
+	font-size: 16pt;
+	margin: 20px 50px;
+}
+li{
+	margin-left: 20px;
+}
+label{
+	font-size: 9pt;
+}
+.form_error{
+	text-align: center;
+}
+.sorry{
+	text-align: center;
+}
+
+#previewWin {
+	background-color: #FF9;
+	width: 200px;
+	height: 100px;
+	font: .6em arial, helvetica, sans-serif;
+	padding: 5px;
+	position: absolute;
+	visibility: hidden;
+	border: 1px #CC0 solid;
+	overflow: hidden;
+}
+
+#previewWin h1, #previewWin h2 {
+	font-size: 1.0em;
+}

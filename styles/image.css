@@ -1,0 +1,70 @@
+.any_logo{
+	opacity: 0.75;
+	float: left;
+}
+.logo_f{
+	float: left;
+	margin-left: 15px;
+}
+.footer_slogan img{
+	align-items: center;
+}
+.button IMG{
+	position: relative;
+}
+.football_ball{
+	-webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	z-index: 2;
+	bottom: 40px;
+}
+.shadow{
+	left: -3px;
+	bottom: 138px;
+	z-index: 1;
+}
+.BPL{
+	left: 103px;
+	bottom: 392px;
+	z-index: 5;
+}
+.BBVA{
+	left: -35px;
+	bottom: 370px;
+	z-index: 3;
+}
+.ChL{
+	bottom: 350px;
+	left: 35px;
+	z-index: 4;
+}
+.NBA{
+	bottom:275px;
+	left: 78px;
+}
+.hockey_puck{
+	margin-left: 115px;
+	z-index:1;
+}
+.KHL{
+	bottom: 133px;
+	left: 110px;
+	z-index:4;
+}
+.hockey_stick{
+	bottom: 235px;
+	left: 165px;
+	z-index:2;
+}
+.NHL{
+	bottom: 245px;
+	left: 118px;
+	z-index:3;
+}
+.table_img{
+	margin-left: 18%;
+}
+.dev{
+	align-items: center;
+}
